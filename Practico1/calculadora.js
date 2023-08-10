@@ -6,15 +6,6 @@ function calculadora() {
     var p = document.getElementById('resultado');
 
 
-    // const valorMax = 1e+10; 
-    // const valorMin = -1e-10; 
-
-    // if (p > valorMax || p < valorMin) {
-    //     document.getElementById('resultado').innerHTML = 'ERROR!!! El resultado tiene demasiados caracteres.!!!';
-    //   return;
-    // }  // Mensaje de ERROR de resultados Maximos y Minimos... No esta funcionando...
- 
-
     if (input1 == '' || input2 == '') {
         p.innerHTML = '¡ATENCION! Ingrese un numero!!! '; // LLamada de atencion al dejar cualquiera de los campos vacios
         return
@@ -42,11 +33,6 @@ function calculadora() {
      p.innerHTML = parseInt(input1) / parseInt(input2) //Operacion de Division
     } 
 
- if ( p > 1e+10 || p < 1e-10 ) {
-    document.getElementById('resultado').innerHTML = 'ERROR!!! El resultado tiene demasiados caracteres.';
-     return //Mensaje de Error de limites MAX y MIN, no esta funcionando....
-  }
-   
 }
 
 function limpiarCampos() {
