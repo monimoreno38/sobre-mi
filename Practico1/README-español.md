@@ -9,14 +9,14 @@ La calculadora esta compuesta por un archivo HTML, CSS y Js, adjuntos a la carpe
 
 ### Pre-requisitos 📋
 
-No hay que instalar ningun Software, simplemente se deja correr a travez de la pagina web. 
+No hay que instalar ningun Software, simplemente se deja correr a traves de la pagina web. 
 
 
 ## Ejecutando las pruebas ⚙️
 
 Para llevar adelante las pruebas se ingresaron numeros en los campos vacios, seleccion desde el boton desplegable de la operacion requerida, y luego con solo un click en el boton "Resultado" Arroja el resultado esperado. Incluye un boton de Borrado y permite realizar operaciones con numeros decimales.
- Al ingresar un dividendo=0 Arroja el mensaje de error solicitado, al igual que cuando uno de los campos queda sin rellenar. no asi Cuando un numero tiene demasiados o pocos resultados. Es un punto a revisar en el Codigo.
- Se solicitaba Mensaje de Error o ALerta, pero me gusto mas como quedaba el Mensaje "ERROR"
+ Al ingresar un dividendo=0 Arroja el mensaje de error solicitado, al igual que cuando uno de los campos queda sin rellenar. No asi cuando un numero tiene demasiados o pocos resultados. Es un punto a revisar en el Codigo.
+ Se solicitaba Mensaje de Error o Alerta, pero me gusto mas como quedaba el Mensaje "ERROR"
 
  Al llevar adelante el punto de Error/Alerta de un numero con demasiados carcteres se utilizaron los codigos:
 
@@ -26,7 +26,7 @@ Para llevar adelante las pruebas se ingresaron numeros en los campos vacios, sel
     document.getElementById('resultado').innerHTML = 'ERROR!!! El resultado tiene demasiados caracteres.';
      return  }
 
-  se modificacon por:
+  se modificaron por:
 
        const valorMax = 1e+10; 
        const valorMin = -1e-10;
@@ -36,7 +36,7 @@ Para llevar adelante las pruebas se ingresaron numeros en los campos vacios, sel
        return;}
 
 
- Dejando un mensaje de ERROR que tampoco funciono:
+ Dejando un mensaje de ERROR "Comentado" que tampoco funciono:
 
       if ( document.getElementById('resultado') > 1e30 || document.getElementById('resultado') < -1e30) {
     p.innerHTML = "El resultado tiene demasiados caracteres"; }
