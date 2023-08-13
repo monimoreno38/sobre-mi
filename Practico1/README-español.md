@@ -36,7 +36,7 @@ Para llevar adelante las pruebas se ingresaron numeros en los campos vacios, sel
        return;}
 
 
- Dejando un mensaje de ERROR "Comentado" que tampoco funciono:
+ Dejando un mensaje de ERROR "Comentando" que tampoco funciono:
 
       if ( document.getElementById('resultado') > 1e30 || document.getElementById('resultado') < -1e30) {
     p.innerHTML = "El resultado tiene demasiados caracteres"; }
