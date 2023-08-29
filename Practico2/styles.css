@@ -1,0 +1,48 @@
+body { 
+  background-image: url(fondo1.webp);
+  backdrop-filter: blur(x);
+text-align: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+box-sizing: border-box;
+}
+
+header{ 
+    background-color: rgb(230, 120, 120, 0.90 );
+    padding: 2px;
+    border-radius: 2px;
+    border-color: black;
+    max-width: 700px;
+    margin: 0 auto;
+    
+}
+
+.playButton, .refreshButton {
+  display: inline-block;
+    justify-content: space-evenly;
+    width: 30%;
+   font-size: large;
+    border-radius: 20px;
+    border: 1px solid;
+    color: #0a0a0a;
+    cursor: pointer;
+  }
+  .primero{
+    font-size: x-large;
+    font-weight: bolder;
+    background-color: rgb(230, 120, 120, 0.80);
+    border-radius: 2px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box;
+
+  }
+
+.segundo{  background-color:  rgb(230, 120, 120, 0.90);
+    border-radius: 2px;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: medium;
+    font-weight: bolder;
+    box-sizing: border-box;
+}

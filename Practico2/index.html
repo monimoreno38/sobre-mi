@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="'stylesheet" />
+    <title>Piedra Papel o Tijeras</title>
+
+  </head>
+  <body>
+      <header>
+        <h1>Bienvenidos/as al clasico Juego.. "PIEDRA, PAPEL O TIJERAS!?"..</h1>  
+      <P> Para Jugar, ingresa tu nombre en el casillero, elije tu opcion, y
+        haz click en "Jugar" para Que comience la BATALLA!!</P>
+      <p>El Mejor de 5 Ganara!</p>
+      <h3>Crees que puedes ganarle a la PC??</h3>
+    </header>
+    
+    <div class="primero">
+      <input required id="playerName" type="text" style="font-size: x-large; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"  
+      placeholder="Ingresa tu nombre aqui" />
+      <br>
+
+    </div>
+    <div class="segundo">
+      <div class="container-choise" id="userSelection">
+
+        <button class="playerChoice" id="ROCK">
+          <img atl="Piedra" src="Piedra.jpg" width="150" />
+          <p>PiEdrA</p>
+        </button>
+
+        <button class="playerChoice" id="PAPER">
+          <img atl="Papel" src="papel.png" width="100" />
+          <p>PaPeL</p>
+        </button>
+      
+        <button class="playerChoice" id="SCISSORS"> 
+          <img atl="Tijeras" src="tijeras.webp" width="100"/>
+          <p>TiJeRaS</p>
+        </button>
+      </div>
+    
+      <div id="message"></div>
+      <div>
+        <p id="pcChoice" name="pcChoice">La Eleccion de la Computadora fue: </p>
+      </div>
+      <div id="messageScore"></div>
+    <button class="playButton" id="play">Jugar</button>
+    <div class="container-results">
+      <h5><p> RESULTADO: </p></h5>
+      <p id="plays"></p>
+      <p id="playerWin"></p>
+      <p id="PCWin"></p>
+      <p id="Final"></p>
+    </div>
+     <button class="refreshButton" id="Refresh">Reiniciar el Juego</button>
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>
